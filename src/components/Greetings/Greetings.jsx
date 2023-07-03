@@ -1,6 +1,6 @@
-import "../Bienvenida/Bienvenida.css"
+import "../Greetings/Greetings.css"
 
-export const Bienvenida = () => {
+export const Greetings = () => {
     return (
         <main className="say-hi">
             <div className="hi">

@@ -1,5 +1,5 @@
 import './App.css'
-import { Bienvenida } from './components/Bienvenida/Bienvenida'
+import { Greetings } from './components/Greetings/Greetings'
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
 import { Presentacion } from './components/Presentacion/presentacion'
 import { NavBar } from './components/NavBar/NavBar'
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
         <NavBar/>
-        <Bienvenida/>
+        <Greetings/>
             
         <section className='tienda'>
         <ItemListContainer nombre="Nike Precision 6 perro" imagen="../imagenes/nike precision 6.jpg" precio="65999" descripcion="Excelente calzado economico, con buen agarre y amortiguacion, para que tus canastas sean incrreibles!" />
