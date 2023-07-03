@@ -1,0 +1,17 @@
+.tienda {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+}
+
+/* .producto {
+    
+
+} */
+
+.img {
+    width: 100%;
+    max-width: 100%;
+
+}
