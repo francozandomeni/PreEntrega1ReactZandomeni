@@ -1,24 +1,34 @@
 import './App.css'
 import { Greetings } from './components/Greetings/Greetings'
-import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
 import { Presentacion } from './components/Presentacion/presentacion'
 import { NavBar } from './components/NavBar/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Prendas from './components/Prendas/Prendas';
+import Calzado from './components/Calzado/Calzado';
+import Info from './components/Info/Info';
+import ItemDetailContainer from './components/ItemListContainer/ItemDetailContainer/ItemDetailContainer';
 
 function App() {
 
   return (
-    <>
-        <NavBar/>
+    <div>
+      <BrowserRouter>
+
+
+      <NavBar/>
+
+      <Routes>
+        <Route path="/" element={<ItemListContainer/>} />
+        <Route path="/productos/:categoryId" element={<ItemListContainer/>} />
+        <Route path="/item/:id" element={<ItemDetailContainer/>}  />
+        <Route path="/info " element={<Info/>} />
+
+        
+      </Routes>
         <Greetings/>
             
-        <section className='tienda'>
-        <ItemListContainer nombre="Nike Precision 6 perro" imagen="../imagenes/nike precision 6.jpg" precio="65999" descripcion="Excelente calzado economico, con buen agarre y amortiguacion, para que tus canastas sean incrreibles!" />
-        <ItemListContainer nombre="Nike Lebron XX" imagen="../imagenes/lebron xx.jpg" precio="89999" descripcion="calzado premium con perfecta amortiguacion. Tus Mates seran incrreibles y volaras como el Rey Lebron!" />
-        <ItemListContainer nombre="Nike Lebron XX" imagen="../imagenes/lebron xx.jpg" precio="89999" descripcion="calzado premium con perfecta amortiguacion. Tus Mates seran incrreibles y volaras como el Rey Lebron!" />
-        <ItemListContainer nombre="Nike Lebron XX" imagen="../imagenes/lebron xx.jpg" precio="89999" descripcion="calzado premium con perfecta amortiguacion. Tus Mates seran incrreibles y volaras como el Rey Lebron!" />
-
-        </section>
         
         <Presentacion MensajeBienvenida="Esta página se creó como 
             trabajo final para un curso de React JS, 
@@ -29,8 +39,10 @@ function App() {
             quise realizar mi proyecto con algo que me guste y que funcione como me gustaría que sea.
             Gracias por visitarnos, les deseo todo lo bueno. Un saludo, Franco." />
         
+      </BrowserRouter>
+
       
-    </>
+    </div>
   )
 }
 

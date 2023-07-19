@@ -1,4 +1,4 @@
-import "../Greetings/Greetings.css"
+// import "../Greetings/Greetings.css"
 
 export const Greetings = () => {
     return (
