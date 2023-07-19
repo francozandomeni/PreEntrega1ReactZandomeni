@@ -5,8 +5,6 @@ import { NavBar } from './components/NavBar/NavBar'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Prendas from './components/Prendas/Prendas';
-import Calzado from './components/Calzado/Calzado';
 import Info from './components/Info/Info';
 import ItemDetailContainer from './components/ItemListContainer/ItemDetailContainer/ItemDetailContainer';
 
@@ -15,22 +13,20 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-
-
       <NavBar/>
 
       <Routes>
+
         <Route path="/" element={<ItemListContainer/>} />
         <Route path="/productos/:categoryId" element={<ItemListContainer/>} />
         <Route path="/item/:id" element={<ItemDetailContainer/>}  />
         <Route path="/info " element={<Info/>} />
 
-        
       </Routes>
         <Greetings/>
-            
-        
-        <Presentacion MensajeBienvenida="Esta página se creó como 
+        <Presentacion 
+
+            MensajeBienvenida="Esta página se creó como 
             trabajo final para un curso de React JS, 
             éste es una librería del conocido lenguaje 
             de programación Javascript, que ayuda a simplificar los procesos a la hora de programar. 

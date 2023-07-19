@@ -13,7 +13,9 @@ export const ItemListContainer = () => {
 
     const pedirProductos = () => {
         return new Promise((resolve, reject) => {
-            resolve(data)
+            setTimeout(  () => {
+                resolve(data)
+            }, 500)
         })
     }
 
@@ -37,7 +39,7 @@ export const ItemListContainer = () => {
 export const pedirItemId = (id) => {
     return new Promise((resolve, reject) => {
 
-        const item = data.find((e) => e.id === id);
+        const item = data.find((e) => e.id === id)
     
 
     if (item) {
