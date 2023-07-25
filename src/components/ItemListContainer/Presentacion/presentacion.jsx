@@ -1,4 +1,4 @@
-import "../Presentacion/Presentacion.css"
+import "./Presentacion.css"
 
 export const Presentacion = ( { MensajeBienvenida } ) => {
 

@@ -1,10 +1,47 @@
-.item {
-    width: 70%;
+.detail-container {
     display: grid;
-    grid-template-rows: 30px 2fr 30px 30px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 
 .precio {
     font-size: 22px;
+    margin: auto;
+    
+
 
 }
+
+.boton-detalle {
+    width: 50%;
+    margin: auto;
+    background-color: red;
+
+}
+
+.imgg {
+    width: 50%
+}
+
+.mas-menos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.numerito {
+    margin: a;
+    padding: auto;
+}
+
+.boton-numerito {
+    margin: auto;
+    background-color: red;
+}
+
+
+
+
