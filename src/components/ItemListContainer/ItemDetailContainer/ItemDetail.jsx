@@ -9,9 +9,9 @@ const ItemDetail = ( {item} ) => {
       <div>  
         <h3>{item.titulo}</h3>
         <img src={item.imagen} className="imgg" alt={item.titulo}></img>
+        <p className='precio'>Precio: ${item.precio}</p>
       </div>
       <div className='info'>
-        <p className='precio'>Precio: ${item.precio}</p>
           <div className='mas-menos'>
             <button className='boton-numerito'>-</button>
             <p className='numerito'>1</p>

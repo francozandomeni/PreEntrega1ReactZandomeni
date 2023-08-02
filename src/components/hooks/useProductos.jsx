@@ -1,26 +1,39 @@
-// import React from 'react'
-// import { useState } from 'react'
-// import { pedirProductos } from '../ItemListContainer/ItemListContainer'
+import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom"
+import { pedirProductos } from "../../helpers/pedirProductos"
 
-// export const useProductos = () => {
-//     const [productos1, setProductos1] = useState()
-//     const [loading, setLoading] = useState(true)
 
-//     useEffect(() => {
-//       setLoading(true)
+
+export const useProductos = () => {
     
-//       pedirProductos() 
-//         .then(r => setProductos1(r))
-//         .catch(e => console.log(e))
-//         .finally(() => {
-//             setLoading(false)
-//         })
-      
-//     }, [])
+    const [productos, setProductos] = useState([])
     
-//   return {
-//     productos1,
-//     loading
-//   }
-// }
+    const [loading, setLoading] = useState(true)
 
+    const { categoryId } = useParams()
+
+
+useEffect(() => {
+
+    setLoading(true)
+
+    pedirProductos()
+
+        .then((res) => {
+            if (categoryId) {
+                setProductos( res.filter((prod) => prod.categoria === categoryId) )
+            } else {
+                setProductos(res)
+            }
+            
+        })
+
+        .catch(e => console.log(e))
+        .finally(() => {
+            setLoading(false)
+        })
+
+    }, [categoryId])
+
+    return { productos, loading }
+}

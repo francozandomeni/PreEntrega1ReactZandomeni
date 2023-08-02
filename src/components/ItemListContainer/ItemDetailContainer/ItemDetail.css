@@ -1,6 +1,7 @@
 .detail-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 600px 600px;
+    width: 30%;
 }
 
 .info {
@@ -9,9 +10,9 @@
 }
 
 .precio {
+    /* font-family: ; */
     font-size: 22px;
     margin: auto;
-    
 
 
 }
@@ -19,7 +20,8 @@
 .boton-detalle {
     width: 50%;
     margin: auto;
-    background-color: red;
+    color: white;
+    background-color: black;
 
 }
 
@@ -30,16 +32,19 @@
 .mas-menos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
 }
 
 .numerito {
-    margin: a;
+    margin: auto;
     padding: auto;
 }
 
 .boton-numerito {
-    margin: auto;
-    background-color: red;
+
+    width: 30px;
+    color: white;
+    background-color: black;
 }
 
 

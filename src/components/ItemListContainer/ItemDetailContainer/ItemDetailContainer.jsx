@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { pedirItemId } from '../ItemListContainer'
+import { pedirItemId } from '../../../helpers/pedirItemId'
 import ItemDetail from './ItemDetail'
 
 
