@@ -23,17 +23,23 @@ export const ItemDetail = ( {item} ) => {
 
   return (
    <div className='detail-container'>
-    
-      <div>  
+      <div className='detail-title'>
           <h3>{item.titulo}</h3>
+
+      </div>
+    
+      <div className='detail-producto'>  
           <img src={item.imagen} className="imgg" alt={item.titulo}></img>
           <p className='precio'>Precio: ${item.precio}</p>
       </div>
+      <div className='container-itemcount'>
       <ItemCount
       cantidad={cantidad}
       handleRestar={handleRestar}
       handleSumar={handleSumar}
       handleAgregar={() => { agregarAlCarrito(item, cantidad) }}/>
+      </div>
+      
            
    
     </div>

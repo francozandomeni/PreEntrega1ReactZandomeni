@@ -13,7 +13,7 @@ export const Carrito = () => {
     return (
     <div className='container'>
         <h1 className='container-h1'>Carrito</h1>
-        
+        <div className='container-carrito'>
         
         {
             carrito.map((producto) => (
@@ -28,14 +28,14 @@ export const Carrito = () => {
         }
         {   
                     carrito.length > 0 ?
-                    <>
+                    <div className='finalizar-compra'>
                         <h2>Precio total: ${total()}</h2>
-                        <button onClick={handleVaciar}>Vaciar</button>
-                        <Link to="/checkout">Finalizar compra</Link>
-                    </> :
+                        <button className='boton-vaciar' onClick={handleVaciar}>Vaciar <i class="fa-solid fa-trash"></i></button>
+                        <Link className='boton-finalizar-compra' to="/checkout">Finalizar compra</Link>
+                    </div> :
                     <h2>El carrito esta vacio :'(</h2>
         }
-        
+       </div> 
     </div>
   )
 }
