@@ -6,7 +6,7 @@
 
      return (
 
-        <section className='tienda'>
+        <section key="tienda" className='tienda'>
         {
             productos.length > 0 && 
             productos.map((producto) => {

@@ -1,7 +1,6 @@
 
-import "../ItemListContainer/ItemListContainer.css"
+import "../../index.css"
 import { ItemListProduct } from "./ItemListProduct/ItemListProduct"
-import data from "../Productos/productos.json"
 import { Presentacion } from "../Presentacion/presentacion"
 import { Greetings } from "../Greetings/Greetings"
 import { useProductos } from "../hooks/useProductos"

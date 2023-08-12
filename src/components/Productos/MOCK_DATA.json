@@ -5,7 +5,8 @@
         "titulo": "Nike Kyrie Low 5.",
         "imagen": "/imagenes/kyrie low 5.jpg",
         "categoria": "Zapatillas", 
-        "precio": 55899
+        "precio": 55899,
+        "stock": 40
     },
 
     {
@@ -13,7 +14,8 @@
         "titulo": "Nike Lebron Witness",
         "imagen": "/imagenes/lebron witness.jpg",
         "categoria": "Zapatillas", 
-        "precio": 64999
+        "precio": 64999,
+        "stock": 40
     },
     {
         "id": 3,
@@ -21,21 +23,24 @@
         "imagen": "/imagenes/lebron xx.jpg",
         "categoria": "Zapatillas", 
         "descripcion":"calzado premium con perfecta amortiguacion. Tus Mates seran incrreibles y volaras como el Rey Lebron!",
-        "precio": 75299
+        "precio": 75299,
+        "stock": 40
     },
     {
         "id": 4,
         "titulo": "Nike GT Cut II",
         "imagen": "/imagenes/nike gt cut.jpg",
         "categoria": "Zapatillas", 
-        "precio": 45999
+        "precio": 45999,
+        "stock": 40
     },
     {
         "id": 5,
         "titulo": "Nike Inmortality Giannis",
         "imagen": "/imagenes/nike inmortality giannis.jpg",
         "categoria": "Zapatillas", 
-        "precio": 47499
+        "precio": 47499,
+        "stock": 40
     },
     {
         "id": 6,
@@ -43,126 +48,144 @@
         "imagen": "/imagenes/nike precision 6.jpg",
         "categoria": "Zapatillas", 
         "descripcion": "Excelente calzado economico, con buen agarre y amortiguacion, para que tus canastas sean incrreibles!",
-        "precio": 51499
+        "precio": 51499,
+        "stock": 40
     },
     {
         "id": 7,
         "titulo": "Nike Kevin Durant 5 Trey X",
         "imagen": "/imagenes/kd trey 5.jpg",
         "categoria": "Zapatillas", 
-        "precio": 47499
+        "precio": 47499,
+        "stock": 40
     },
     {
         "id": 8,
         "titulo": "Media Nike Blanca Elite NBA",
         "imagen": "/imagenes/media1.jpg",
         "categoria": "Medias",
-        "precio": 4999
+        "precio": 4999,
+        "stock": 40
     },
     {
         "id": 9,
         "titulo": "Media Nike Negra Elite NBA",
         "imagen": "/imagenes/media3.jpg",
         "categoria": "Medias",
-        "precio": 5999
+        "precio": 5999,
+        "stock": 40
     },
     {
         "id": 10,
         "titulo": "Media Stance Blanca NBA",
         "imagen": "/imagenes/media4.jpg",
         "categoria": "Medias",
-        "precio": 6999
+        "precio": 6999,
+        "stock": 40
     },
     {
         "id": 11,
         "titulo": "Media Nike Elite Blanca",
         "imagen": "/imagenes/media5.jpg",
         "categoria": "Medias",
-        "precio": 4499
+        "precio": 4499,
+        "stock": 40
     },
     {
         "id": 12,
         "titulo": "Media Elite Negra y Blanca",
         "imagen": "/imagenes/media6.jpg",
         "categoria": "Medias",
-        "precio": 4999
+        "precio": 4999,
+        "stock": 40
     },
     {
         "id": 13,
         "titulo": "Media Elite Negra y Roja",
         "imagen": "/imagenes/media7.jpg",
         "categoria": "Medias",
-        "precio": 5199
+        "precio": 5199,
+        "stock": 40
     },
     {
         "id": 14,
         "titulo": "Chicago Bulls: Michael Jordan ",
         "imagen": "/imagenes/camiseta1.jpg",
         "categoria": "Remeras",
-        "precio": 4999
+        "precio": 4999,
+        "stock": 40
     },
     {
         "id": 15,
         "titulo": "Philadelphia 76ers: Allen Iverson ",
         "imagen": "/imagenes/camiseta2.jpg",
         "categoria": "Remeras",
-        "precio": 4999
+        "precio": 4999,
+        "stock": 40
     },
     {
         "id": 16,
         "titulo": "Los Angeles Lakers: Shaquille O'Neal",
         "imagen": "/imagenes/camiseta3.jpg",
         "categoria": "Remeras",
-        "precio": 4999
+        "precio": 4999,
+        "stock": 40
     },
     {
         "id": 17,
         "titulo": "Chicago Bulls: Dennis Rodman",
         "imagen": "/imagenes/camiseta4.jpg",
         "categoria": "Remeras",
-        "precio": 4999
+        "precio": 4999,
+        "stock": 40
     },
     {
         "id": 18,
         "titulo": "Los Angeles Lakers: Lebron James",
         "imagen": "/imagenes/camiseta5.jpg",
         "categoria": "Remeras",
-        "precio": 4999
+        "precio": 4999,
+        "stock": 40
     },
     {
         "id": 19,
         "titulo": "Pantalon Chicago Bulls",
         "imagen": "/imagenes/pantalon1.jpg",
         "categoria": "Pantalones",
-        "precio": 4999
+        "precio": 4999,
+        "stock": 40
     },
     {
         "id": 20,
         "titulo": "Pantalon Orlando Magic",
         "imagen": "/imagenes/pantalon2.jpg",
         "categoria": "Pantalones",
-        "precio": 4999
+        "precio": 4999,
+        "stock": 40
     },
     {
         "id": 21,
         "titulo": "Pantalon Memphis Grizzlies",
         "imagen": "/imagenes/pantalon3.jpg",
         "categoria": "Pantalones",
-        "precio": 4999
+        "precio": 4999,
+        "stock": 40
     },
     {
         "id": 22,
         "titulo": "Pantalon Los Angeles Lakers",
         "imagen": "/imagenes/pantalon4.jpg",
         "categoria": "Pantalones",
-        "precio": 4999
+        "precio": 4999,
+        "stock": 40
     },
     {
         "id": 23,
         "titulo": "Pantalon Chicago Bulls",
         "imagen": "/imagenes/pantalon5.jpg",
         "categoria": "Pantalones",
-        "precio": 4999
+        "precio": 4999,
+        "stock": 40
     }
         
     

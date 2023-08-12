@@ -1,12 +1,12 @@
-// import "../Greetings/Greetings.css"
+import "../../../src/index.css"
 
 export const Greetings = () => {
     return (
-        <main className="say-hi">
-            <div className="hi">
+        <main className="bienvenida">
+            <div className="container bienvenida">
                 <h1>Bienvenidos!</h1>
                
-                <p className="what">Aqui encontraras los mejores calzados y el mejor precio del mercado.</p>
+                <p className="mensaje">Aqui encontraras los mejores calzados y el mejor precio del mercado.</p>
 
             </div>
 
