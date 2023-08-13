@@ -48,7 +48,7 @@ const ItemDetailContainer = () => {
   return (
     <div>
       { loading 
-      ? <h2>Cargando...</h2>
+      ? <h2 className='h2-cargando'>Cargando...</h2>
       : <div>
         { item && <ItemDetail item={item} />}
       </div>

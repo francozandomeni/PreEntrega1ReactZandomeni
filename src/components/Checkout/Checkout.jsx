@@ -41,7 +41,7 @@ const Checkout = () => {
 
     if(pedidoId) {
         return (
-            <div className="container">
+            <div className="container-thanks">
                 <h1>Muchas gracias por tu compra</h1>
                 <p>Tu numero de pedido es: {pedidoId}</p>
             </div>
@@ -55,12 +55,15 @@ const Checkout = () => {
     
 
   return (
-    <div>
-        <h1>Finalizar compra</h1>
+    <div className='container-checkout'>
+        <h1 className='h1'>Finalizar compra</h1>
         <form onSubmit={handleSubmit(comprar)}>
-            <input type="text"  placeholder='Ingresa tu nombre'{...register("nombre")}/>
-            <input type="email" placeholder='Ingresa tu email' {...register("email")}/>
-            <input type="phone" placeholder='Ingresa tu telefono' {...register("telefono")}/>
+            <div ><input className='input' type="email" placeholder='Ingresa tu email' {...register("email")}/>
+             </div>       
+             <div ><input className='input' type="text"  placeholder='Ingresa tu nombre'{...register("nombre")}/>
+            </div>        
+            <div ><input className='input' type="phone" placeholder='Ingresa tu telefono' {...register("telefono")}/>
+            </div>
 
             <button disabled={loading} className='enviar' type='submit'>Enviar</button>
         </form>

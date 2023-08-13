@@ -12,7 +12,7 @@ export const ItemCount = ( {cantidad, handleRestar, handleSumar, handleAgregar} 
         </div>
         <div className="container-agregar">
           <button onClick={handleAgregar} className="boton-agregar">Agregar al carrito</button>
-          <Link to="/checkout" className='checkout'>Checkout <i className="fa-solid fa-cart-shopping"></i></Link>
+          <Link to="/checkout" className='itemcount-checkout'>Checkout <i className="fa-solid fa-cart-shopping"></i></Link>
         </div>
         
       
