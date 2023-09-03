@@ -1,4 +1,4 @@
-import "../../../src/index.css"
+import "./Greetings.css"
 
 export const Greetings = () => {
     return (

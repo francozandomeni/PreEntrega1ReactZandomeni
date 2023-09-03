@@ -1,0 +1,33 @@
+.ver-mas {
+    color: #efefd0;
+    text-decoration: none;
+  }
+  .ver-mas:visited {
+    color: #efefd0
+  
+  }
+  
+  .producto {
+    transition: transform 0.5s;
+    
+  }
+  
+  .producto:hover {
+  
+    transform: scale(1.0) translateY(-15px);
+    box-shadow: #294c60 0px 50px 100px -20px, #294c60 0px 30px 60px -30px, #294c60 0px -2px 6px 0px inset;
+  }
+  
+  .detalles {
+    font-size: 20px;
+    text-decoration:underline;
+    font-family: 'Nunito Sans', sans-serif;
+    
+
+  }
+
+  .img {
+    width: 100%;
+    max-width: 100%;
+  
+  }

@@ -1,0 +1,31 @@
+.detail-container {
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: 30px 1fr 1fr;
+    width: 30%;
+    color:#efefd0;
+  }
+  
+  .detail-title {
+    margin: 30px;
+  }
+  
+  .detail-producto {
+    margin-top: 60px;
+  }
+  
+  .container-itemcount {
+    margin-bottom: 50px;
+  }
+  
+  .info {
+    display: grid;
+    grid-template-rows: 90px 90px 90px;
+  }
+  
+  .precio {
+    font-size: 22px;
+    margin: auto;
+  
+  
+  }

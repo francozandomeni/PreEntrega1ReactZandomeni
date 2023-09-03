@@ -5,6 +5,8 @@ import { collection, addDoc } from 'firebase/firestore'
 import { db } from '../../firebase/config'
 import { useState } from 'react'
 import { Navigate } from 'react-router-dom'
+import Swal from 'sweetalert2'
+import "./Checkout.css"
 
 
 const Checkout = () => {
@@ -16,6 +18,25 @@ const Checkout = () => {
     const { register, handleSubmit } = useForm()
 
     const [ pedidoId, setPedidoId ] = useState("")
+
+    const timerInterval = () => {
+    Swal.fire({
+      title: 'La compra se ha realizado correctamente',
+      icon: 'success',
+      html: 'Enseguida te mostraremos el ID de la compra.',
+      timer: 3000,
+      timerProgressBar: true,
+      
+      willClose: () => {
+        clearInterval(timerInterval)
+      }
+    }).then((result) => {
+     
+      if (result.dismiss === Swal.DismissReason.timer) {
+        console.log('I was closed by the timer')
+      }
+    })
+}
 
 
     const comprar = (data) => {
@@ -65,7 +86,7 @@ const Checkout = () => {
             <div ><input className='input' type="phone" placeholder='Ingresa tu telefono' {...register("telefono")}/>
             </div>
 
-            <button disabled={loading} className='enviar' type='submit'>Enviar</button>
+            <button disabled={loading} onClick={timerInterval} className='enviar' type='submit'>Enviar</button>
         </form>
     </div>
   )

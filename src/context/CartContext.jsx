@@ -1,4 +1,4 @@
-
+import Swal from 'sweetalert2'
 import { createContext, useEffect, useState } from 'react'
 
 export const CartContext = createContext()
@@ -23,6 +23,23 @@ export const CartProvider = ({children}) => {
         carritoNuevo.push(productoAgregado)
       }
       setCarrito(carritoNuevo)
+      let timerInterval
+      Swal.fire({
+        title: 'El producto se añadió al carrito',
+        icon: 'success',
+        html: 'Dirigete al <b>checkout</b> para finalizar tu compra.',
+        timer: 3000,
+        timerProgressBar: true,
+        
+        willClose: () => {
+          clearInterval(timerInterval)
+        }
+      }).then((result) => {
+       
+        if (result.dismiss === Swal.DismissReason.timer) {
+          console.log('I was closed by the timer')
+        }
+      })
     }
   
     const cantidadEncarrito = () => {

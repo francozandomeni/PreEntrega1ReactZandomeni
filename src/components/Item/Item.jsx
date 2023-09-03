@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import "./Item.css"
 
 export const Item = ( {producto} ) => {
     return (

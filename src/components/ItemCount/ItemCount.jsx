@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
-import { useProductos } from "../../../../hooks/useProductos"
+import { useProductos } from "../hooks/useProductos"
+import "./ItemCount.css"
 
 
 export const ItemCount = ( {cantidad, handleRestar, handleSumar, handleAgregar} ) => {

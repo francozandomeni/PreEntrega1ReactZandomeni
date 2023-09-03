@@ -1,4 +1,7 @@
- import { Item } from "./Item/Item"
+ import { Item } from "../Item/Item"
+ import "./ItemListProduct.css"
+
+
  export const ItemListProduct = ( {productos} ) => {
 
 

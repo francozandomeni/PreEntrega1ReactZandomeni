@@ -1,11 +1,11 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { ItemDetail } from './ItemDetail/ItemDetail'
+import { ItemDetail } from '../ItemDetail/ItemDetail'
 import { doc, getDoc } from "firebase/firestore"
-import { db } from '../../../firebase/config'
+import { db } from '../../firebase/config'
 import { useContext } from 'react'
-import { CartContext } from '../../../context/CartContext'
+import { CartContext } from '../../context/CartContext'
 
 
 

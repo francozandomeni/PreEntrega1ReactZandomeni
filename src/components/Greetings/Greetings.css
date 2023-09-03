@@ -1,0 +1,28 @@
+
+.bienvenida {
+
+    margin: 80px 30px;
+    border-color: #ffc49b;
+    border-radius: 10px;
+  }
+  
+  .bienvenida-titulo {
+    font-size: 50px;
+    font-family: 'Borel', cursive;
+    font-family: 'REM', sans-serif;
+    color:  #001b2e;
+    
+  }
+  
+  .bienvenida-mensaje{
+    font-size: 20px;
+    color:  #001b2e;
+    
+  }
+  
+  .fuerte {
+      color: #efefd0;
+      background-color: #001b2e;
+      font-weight: 500;
+  }
+  

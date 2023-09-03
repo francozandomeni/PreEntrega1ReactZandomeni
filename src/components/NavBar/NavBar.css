@@ -1,0 +1,26 @@
+.navbar-container {
+    background-color: #efefd0;
+  }
+  
+  
+  .container-fluid { 
+    background-color: #efefd0;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+  
+  }
+  
+  
+  .navbar-collapse{
+    background-color: #efefd0;
+  
+  }
+  
+  .brand {
+    font-family: 'Borel', cursive;
+    padding: auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

@@ -1,4 +1,4 @@
-
+import "./Presentacion.css"
 
 export const Presentacion = ( { MensajeBienvenida } ) => {
 
@@ -7,9 +7,6 @@ export const Presentacion = ( { MensajeBienvenida } ) => {
             <p className="welcome-message">
             {MensajeBienvenida}
             </p>
-            
-        
-
         </article>
     )
 }
